@@ -26,14 +26,50 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'Computer Modern Typewriter';
+    src: url('../fonts/webfonts/cmutypewritertext_roman_macroman/cmuntt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Computer Modern Typewriter';
+    src: url('../fonts/webfonts/cmutypewritertext_bold_macroman/cmuntb-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Computer Modern Typewriter';
+    src: url('../fonts/webfonts/cmutypewritertext_oblique_macroman/cmunit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Computer Modern Typewriter';
+    src: url('../fonts/webfonts/cmutypewritertext_boldoblique_macroman/cmuntx-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
 body {
     font-family: 'Computer Modern Serif';
 }
 
-.bold-text {
+code, pre {
+    font-family: 'Computer Modern Typewriter';
+}
+
+.bold {
     font-weight: bold;
 }
 
-.italic-text {
-    font-weight: italic;
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
 }
