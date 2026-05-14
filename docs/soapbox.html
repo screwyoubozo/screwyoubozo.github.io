@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 	<head>
+		<meta charset="UTF-8">
 		<title>My soapbox</title>
 		<link rel="stylesheet" href="styles/styles.css">
 	</head>
 	<body>
-		<div class="topnav">
-			<a href="index.html">Home</a>
-			<a class="active" href="soapbox.html">Soapbox</a>
-		</div>
+		<div id="topnav-placeholder"><p>Did you remember to run <code>python -m http.server 9000</code>?</p></div>
+		<script>
+			fetch('/lib/topnav.inc')
+			.then(res => res.text())
+			.then(html => {
+				document.getElementById('topnav-placeholder').innerHTML = html;
+			});
+		</script>
 		<h1>Welcome to my soapbox</h1>
 		<p>If a link is broken, this means I am probably still working on typing them. LOL</p>
 		<ul>

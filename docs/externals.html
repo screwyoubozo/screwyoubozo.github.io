@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Clicky Stuffs</title>
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <div id="topnav-placeholder"><p>Did you remember to run <code>python -m http.server 9000</code>?</p></div>
+		<script>
+			fetch('/lib/topnav.inc')
+			.then(res => res.text())
+			.then(html => {
+				document.getElementById('topnav-placeholder').innerHTML = html;
+			});
+		</script>
+        <h1>External links</h1>
+        <p>Check these websites out! Quasi-officially "endorsed" by me. (To be added to the list of friends below, you should get to know me IRL.)</p>
+        <h2>Friends</h2>
+        <ul>
+            <li><code><a href="https://coff33mug.github.io/portfolio">Coff33_Mug ☕</a></code></li>
+            <li><code><a href="https://projectc190.net">Project C190 💾</a></code></li>
+        </ul>
+        <h2>Required and Recommended Reading</h2>
+        <h3>Textbooks</h3>
+        <p>These don't have links, but you can find them on the web. Sorry!</p>
+        <ul>
+            <li><b>Abbott</b>, Stephen: <i>Understanding Analysis</i> [MAT 371]</li>
+            <li><b>Hammack</b>, Richard: <i>Book of Proof</i> [MAT 300]</li>
+            <li><b>Hoffstein</b>, Jeffrey; <b>Pipher</b>, Jill; <b>Silverman</b>, Joseph: <i>An Introduction to Mathematical Cryptography</i> [MAT 447]</li>
+            <li><b>Raghavan</b>, Prabhakar and <b>Motwani</b>, Rajeev: <i>Randomized Algorithms</i> [CSE 552]</li>
+            <li><b>Roth</b> Jr., Charles; <b>John</b>, Lizy Kurian; <b>Lee</b>, Byeong Kil: <i>Digital Systems Design Using Verilog</i> [CSE 320]</li>
+            <li><b>Sedra</b>, Adel; <b>Smith</b>, Kenneth; <b>Carusone</b>, Tony Chan; <b>Gaudet</b>, Vincent: <i>Microelectronic Circuits</i> [EEE 334]</li>
+            <li><b>Sipser</b>, Michael: <i>Introduction to the Theory of Computation</i> [CSE 355]</li>
+            <li><b>Vazirani</b>, Vijay: <i>Approximation Algorithms</i> [CSE 552]</li>
+        </ul>
+        <h3>Elective Readings</h3>
+        <p>These are some things I read for humanities-related electives, such as HON 370 [History of Ideas]. I'll add them eventually.</p>
+    </body>
+</html>

@@ -59,7 +59,29 @@ body {
 }
 
 code, pre {
-    font-family: 'Computer Modern Typewriter';
+    font-family: 'Computer Modern Typewriter', monospace;
+}
+
+:lang(ja) {
+    font-family: 'Computer Modern Serif',
+                 'Noto Sans CJK JP',
+                 'Hiragino Kaku Gothic ProN',
+                 'Yu Gothic',
+                 'Meiryo';
+}
+
+:lang(zh-Hans) {
+    font-family: 'Computer Modern Serif',
+                 'Noto Sans CJK SC',
+                 'PingFang SC',
+                 'Microsoft YaHei';
+}
+
+:lang(zh-Hant) {
+    font-family: 'Computer Modern Serif',
+                 'Noto Sans CJK TC',
+                 'PingFang TC',
+                 'Microsoft JhengHei';
 }
 
 .bold {

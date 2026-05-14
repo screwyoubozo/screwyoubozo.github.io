@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>Soapbox: Syllabus</title>
 		<link rel="stylesheet" href="../styles/styles.css">
     </head>
     <body>
-        <div class="topnav">
-			<a href="../index.html">Home</a>
-			<a class="active" href="../soapbox.html">Soapbox</a>
-		</div>
+        <div id="topnav-placeholder"><p>Did you remember to run <code>python -m http.server 9000</code>?</p></div>
+		<script>
+			fetch('/lib/topnav.inc')
+			.then(res => res.text())
+			.then(html => {
+				document.getElementById('topnav-placeholder').innerHTML = html;
+			});
+		</script>
         <h1>How to write a syllabus and run a class: my experience as a TA</h1>
         <p>The title is a bit misleading because it also includes experience as a student. But in any case, there are many practices that I observe in the classes I have participated in. Some that I appreciate, and some that I do not appreciate.</p>
         <p>Small aside, but you should type your syllabi in LaTeX. In general, you should type just about anything that you don't expect to have students edit [or fill out] in LaTeX. (Alternatively, give students a <code>.tex</code> file.) It looks nicer. If you don't know how to use LaTeX, you should learn how to use LaTeX. <a href="https://www.overleaf.com/">Overleaf</a> is a wonderful website to use.</p>
@@ -32,11 +37,14 @@
         <p>Discord is still a pretty good option to use. Well, if the instructor wants to keep Discord for smaller matters, then the instructor can choose not to join their class Discord. Just have TAs monitor that part.</p>
         <p>You should always have email open. Here is my example of an email policy you should use:</p>
         <pre>
-            Should you need to email the instructor of a matter related to the course, send an email that includes the course number and a brief description in your subject. For example:
-            
-	    CSE 360: Unclear wording on Project Phase 2
-            
-            Each email must be carbon-copied (CCed) to the instructors and ALL TAs. For grading-related questions, the grader(s) must also be CCed. <i>Emails that do not follow the aforementioned guideline will NOT be returned.</i>
+Should you need to email the instructor of a matter related to the course, 
+send an email that includes the course number and a brief description in your subject. For example:
+    
+CSE 360: Unclear wording on Project Phase 2 <!-- fun fact: tab and space indents are NOT the same!-->
+    
+Each email must be carbon-copied (CCed) to the instructors and ALL TAs (unless there is a compelling reason not to). 
+For grading-related questions, the grader(s) must also be CCed. 
+<i>Emails that do not follow the aforementioned guideline will NOT be returned.</i>
         </pre>
         <p>Once again, don't leave your TAs to handle all of the communication, or the whole class for that matter. Again, what the fuck.</p>
         <h3>Communication within the Teaching Team</h3>
