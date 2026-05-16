@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Soapbox: How to pass classes</title>
+        <link rel="stylesheet" href="../styles/styles.css">
+    </head>
+    <body>
+        <div id="topnav-placeholder"><p>Did you remember to run <code>python -m http.server 9000</code>?</p></div>
+		<script>
+			fetch('/lib/topnav.inc')
+			.then(res => res.text())
+			.then(html => {
+				document.getElementById('topnav-placeholder').innerHTML = html;
+			});
+		</script>
+        <h1>How to pass your classes: My secret recipe</h1>
+        <p>This title is a bit misleading because it doesn't have specific ingredients listed, and this isn't really a secret. I'm not a cookbook writer.</p>
+        <h2>Context</h2>
+        <h3>What does it mean to be an academic weapon? Does it really matter?</h3>
+        <p>The general consensus, or at least what I see from a very lazy Google search, is that an "academic weapon" is a student that performs really well in school.
+            So most likely getting 5s on their AP exams or A+ in all of their classes. Maybe with little to no effort. Or also doing nerdy extracurriculars like Academic Decathlon.
+        </p>
+        <p>If you are to ask someone that knows me if I fit that archetype, they would very confidently say "yes." If you were to ask me, I would say "probably not."
+            Unlike the idealised person described above, while I did "pass" all of my AP exams, I only got a 3 on APUSH and AP Lang. Not the 5 that I hoped for.
+            At the same time, I took AP Chemistry for fun in my senior year of high school and got one of the easiest 5s ever; it was a "write your name" kind of test.
+            I ended up with only one B ever (in a grading scale with no +/- grades), that being in AP Lang. I never took on-level classes in high school unless it was my only option.
+        </p>
+        <p>I took part in the <a href="https://maa.org/student-programs/amc/">AMC</a> competition all four years of high school, but only qualified for AIME in my senior year.
+            My AP Chemistry teacher introduced her classes to the <a href="https://www.acs.org/education/olympiad.html">US National Chemistry Olympiad</a> which I only took in my senior year, when I did AP Chemistry for fun.
+            I qualified for the national round, but did not make it to IChO. (I wonder if I should've been a chemistry major instead of a computer-related major. I was considering taking organic chemistry for fun in freshman year.)
+            I considered taking part in the Academic Decathlon in my junior year, but as I was recovering from a bout of depression and could not commit that much time, I worried about other things.
+        </p>
+        <p>I also forgot to take the PSAT/NMSQT in my junior year, letting an opportunity to get the National Merit Scholarship slip by. (I also happened to score 33 in my ACT (well... 5/12 on writing) and 1470 on SAT without studying. I'm not sweaty or invested enough to get a 36 on the ACT or 1600 on the SAT.)
+            I gambled to get accepted at prestigious universities and made it into Brown (but got rejected from many others). I'm just a fresh ASU graduate because $90k a year is too expensive.
+        </p>
+        <p>My time organization skills have always been crappy as hell, so I tried a "black magic trick" in my senior year of college. My time organization still sucks, and I'm fumbling a lot with easily avoidable mistakes.</p>
+        <p>So what does it mean to be an academic weapon, really? That's not the point here. Even an ordinary bozo like myself can pass classes, so I'm here to share my secret sauce with other ordinary (or above-average) bozos like yourselves.</p>
+        <h3>My senior year of undergraduate college</h3>
+        <p>In the two semesters of my senior year of college, I took a total of 39 credits: 21 in fall '25 and 18 in spring '26. In particular, 9 of those credits were graduate. To put things into a general perspective, the nominal load for one term/semester for an undergraduate student is 15 undergraduate credits, and the nominal load for a gradual student is 9 graduate credits. So I ended up doing an equivalent of 3 semesters in the time of two semesters. (Effectively, one semester for free!)</p>
+        <p>To put things into better perspective, some of the undergraduate classes I took were <a href="https://pwn.college/dojos/cse466-f2025">CSE 466 - Computer Systems Security</a> and MAT 371 - Advanced Calculus [real analysis]. Two of the hardest undergraduate classes offered. I was also working on an honours thesis and a capstone project at the same time whilst taking very difficult graduate classes, prime of which being the randomised and approximation algorithms class.
+            With the exception of MAT 371 and thesis, I got A+ in <b>all</b> of my classes [as for those, I got an A]. I have never gotten a grade of A- or below. I also gave myself weekends to play Pokémon GO with my friend, and I worked at least 15-20 hours, maybe more, each week. With <i>possibly self-coerced</i> good time management, you can unlock your full potential, just like I might've.
+        </p>
+        <p>In any case, now I am not worried at all about passing my master's classes. Maybe except coming up with a thesis topic.</p>
+        <h2>The Secret Recipe (or Secret Sauce)</h2>
+        <i>If you are looking for advice on how to study for your exams, and you have an exam in less than a week, it's a bit too late. This approach is for the WHOLE CLASS, not just an exam!</i>
+        <h3>Secret Sauce 0: Stop Worrying About Your Grades; Make an Honest Effort</h3>
+        <p>The one number (or letter) that determines whether or not you pass your class is your grade, so this point kinda looks like bullshit. Hang on a moment.</p>
+        <p>In order to pass your classes, you need to do well in your assignments, projects, exams, and whatnot. When I took a graduate algorithms class, I did really horribly in the graded quizzes, but pulled myself together for my exams. As I approached each of the smaller stakes assignments, I would use give it my best shot... and make a lot of mistakes there.
+            After getting maybe a 70% on the assignment (compared to my classmates' resounding 100%, well, because they cheated), I would figure out why I got things wrong. <b>Get comfortable with being wrong early on because it burns into your memory better than something that you got right.</b>
+            While it is better for your grade to get things right in a "first practice" run, those questions you get right become easier to forget. After all, if you "already know something," you are probably less inclined to look over it again.
+        </p>
+        <p>As a small aside, this is where some of the dangers of generative AI come into play. It can give you the right answers, but if you're asking just for the correct answers, you'll probably get them right but then forget about them when you really need to remember (<i>i.e.</i> during an exam).
+            This doesn't mean you should go out of your way to answer things wrong; if you answer everything wrong on purpose, then it looks like you have to study just about everything. That can be quite overwhelming. So make an honest attempt and recognize what you were able to remember, what you need to improve, etc.
+            You might fail a lot initially, but when it really matters, you will succeed where everyone else didn't.
+        </p>
+        <p>When I took real analysis, I would get stopped dead in my tracks in the algebra for quizzes, scoring around 80%. I practiced all of my proofs by heart and reinforced how to do proper algebra, allowing me to score 91% and 97% in my midterm and final, respectively, finishing off with a strong A. Similarly, in my algorithms class, I would only score around 70% to 80% on the smaller assignments, but once it was time for exams [which were 75% of the grade], I got 92%, 99%, and 99%.</p>
+        <h3>Secret Sauce 1: Plan Ahead with Given Deadlines</h3>
+        <p>I always appreciate when my professors give deadlines for their projects or assignments. My usual plan, assuming that I have a relatively similar distribution of classes on Monday/Wednesday and Tuesday/Thursday, is to allocate time for M/W classes on M/W, and allocate time for T/Th classes on T/Th. As soon as a project or assignment is released, take a quick look and estimate how much effort or time you will need to allocate, because for <b>most</b> advanced classes, <b>YOU WILL NOT BE ABLE TO START AND DELIVER A WELL-DONE PROJECT IF YOU START THREE HOURS BEFORE THE DEADLINE</b>.</p>
+        <p>Hopefully most of your advanced classes allow you to <b>discuss</b> (this does NOT mean copy) with your classmates about homework and projects. When I took a class on randomised and approximation algorithms last spring, some classmates (including myself) would always arrange a meet at a pizza place every other Thursday, when homework was due, to discuss the homework problems. All of us would be prepared with a partial solution, but then we'd debate each other to make sure that our logic was correct. (Also, because our TA, who was the absolute goat, is a very careful grader. We respect that.)</p>
+        <p>We would also dedicate some time before exams to meet and study together, in a similar fashion to solving homework problems.</p>
+        <h3>Secret Sauce 2: Be Prepared to Adapt</h3>
+        <p>Some classes are just going to be very difficult; your peers will likely be about as confused as you are (maybe not, but don't worry if that's the case), and your professors should be aware of the depth and complexity of the topics they teach. So a good student, in spite of their confusion, will <b>ask for help. Unapologetically!</b> Even if your professor turns your question down, it is okay (and expected) to have confusion. Embrace it, ask your peers for help, or press your professor harder to get a better understanding. It is the professor's job to teach you well, and you, the student, have an equal responsibility to ensure you are able to learn the course's content well.</p>
+        <p>I used to be able to rawdog most of my undergraduate courses on my own, sometimes taking the role of a tutor for linear algebra (MAT 343) or undergraduate DSA (CSE 310). Things used to be so easy to the point that I effortlessly earned every single point possible in MAT 343. But now, instead of the role of "tutor," I play the role of "fellow confused peer"; nevertheless, I still discuss topics with my peers, but now I am trying to better learn some things.</p>
+        <p>In the spring semester, as I took randomised and approximation algorithms, the old approach of rawdogging most classes was just not possible. This was one of the first classes where I <i>had</i> to attend office hours like my life depends on it. Again, referring to my secret sauce about grades, it's not really about getting a good grade, but being able to UNDERSTAND what I need to learn.</p>
+        <p>The fruits of my labour have paid off as I managed to get an A+ (as described before) in the randomised and approximation algorithms class, being two homework points away from falling to an A (which I would also graciously accept). I got a very confident 95% on both of the exams. <b><a href="https://tenor.com/view/lock-in-silly-cat-cat-locked-in-lock-tf-in-gif-12487162223602060140" target="_blank">LOCK TF IN!</a></b></p>
+        <h3>Secret Sauce 3: Sign Up for a Fuck Ton of Classes and Work</h3>
+        <p><b>WARNING! While this approach can mitigate bad time management, it is very high-risk and high-reward. You need to have very strong personal discipline for this to be successful; otherwise, this can become quite a disaster.</b></p>
+        <p>One reason why I signed up for 21 credits in fall '25 and 18 credits in spring '26 was because I wanted to head-start my accelerated master's programme, complete an honours thesis, and complete a mathematics minor with a healthy mix of real analysis and cryptography.</p>
+        <p>I also signed up for 15-20 hours of work, 10 hours for the math department (assisting college algebra students), 5 hours for an engineering class, and 5 hours of cybersecurity research [which I got laid off from in the spring] because I needed money. I'm not that rich, and I would love to live comfortably, and I would like to multiply even more money in the stock market.</p>
+        <p>But above all else, this approach <b>forces</b> me to have good time management. I still have weekends for myself. I learned, in my second year of college, even if I had less courses and hours worked, I would still have crappy time management while completing less than what I <i>could have</i>. By taking all of these classes and work, I have created the ultimate sink-or-swim situation: <b>have good time management and pass all of your classes with flying colours</b>, or <b>succumb to bad time management and actually face dire consequences</b>.</p>
+        <h3>Secret Sauce 4: How Much of an Understanding Do You Really Want?</h3>
+        <p>Sometimes, classes suck. If you are part of ASU's computer science or computer systems engineering programmes, think about CSE 360. You might burn yourself out by putting too much effort into pain, so ask yourself how deep of an understanding you want.</p>
+        <p>My real analysis professor once said, "If you know just the red (main) topics, studying those will get you a C. If you also study the bolded black topics, sufficient investment will move you up to a B. But if you want to score an A in this class, you have to know everything." Recognizing that you <i>don't</i> have to know everything, ask yourself how much you <i>want</i> to know. I, personally, take an all-or-nothing approach.</p>
+    </body>
+</html>
