@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Soapbox: Chinese and Japanese writing</title>
+		<link rel="stylesheet" href="../styles/styles.css">
+    </head>
+    <body>
+        <div id="topnav-placeholder"><p>Did you remember to run <code>python -m http.server 9000</code>?</p></div>
+		<script>
+			fetch('/lib/topnav.inc')
+			.then(res => res.text())
+			.then(html => {
+				document.getElementById('topnav-placeholder').innerHTML = html;
+			});
+		</script>
+        <h1>Chinese characters, Japanese writing, and why they are not THAT complicated</h1>
+        <p>The title is a bit misleading because I also include Korean and Vietnamese, and because all of these languages are quite complicated. Not that you should be concerned about because English is very complicated already.</p>
+        <h2>Writing</h2>
+        <p>I assume that you are fluent in English and are able to articulate all (except for two words at most) English words on this page.</p>
+        <p>The English language uses Latin letters for our words. Suppose we want to write the word "tear" (for reference, 💧). To write it, we draw these symbols from left to right: <code>T E A R</code> [or in lowercase, <code>t e a r</code>]. I will get back to reading aloud later.</p>
+        <p>Now suppose we wanted to write that down in traditional Chinese. We will instead draw the symbol <span lang="zh-Hant">淚</span>. As for simplified Chinese, the symbol used instead is <span lang="zh-Hans">泪</span>.</p>
+        <p>In Japanese, they also use these symbols, possibly with some difference from that of Chinese. The symbol that is used is <span lang="ja">涙</span>. (It looks very similar to traditional Chinese; I describe that later.)</p>
+        <h3>How did the Chinese (and Japanese) come up with these?</h3>
+        <p>Formally speaking, these symbols are known as Hanzi in Chinese, or Kanji in Japanese. It is written as 漢字 in traditional Chinese and Japanese. For many basic words, the Chinese used some sort of pictoral representation to represent them. An alphabet (such as in English) has each letter represents a sound [with some exceptions], and combined letters form a word. However, you don't directly get a word's meaning just by looking at it. In Chinese and Japanese, these characters express meaning more directly, but you won't know how to read the word just by looking at it (especially in Japanese).</p>
+        <h4>Very basic characters</h4>
+        <p>Consider the word "person." Imagine if we were to use pictures or emojis instead of letters to communicate these ideas. This means, instead of writing <code>p e r s o n</code>, I will draw 👱 instead. Similarly, consider the word "tree." Instead of writing <code>t r e e</code>, I will draw 🌲 instead. I think it's quite a pain in the ass to draw a person or tree with such delicate detail. So let's not do that.</p>
+        <p>Instead, let's do something easier that can still communicate the same idea:</p>
+        <pre>
+             o               \/|\/
+            /|\               \|/
+            / \                |
+        </pre>
+        <p>Now THESE kinds of crude drawings are more lightweight and easier to use. Today, Chinese and Japanese use the characters 人 and 木 respectively for these. (Hopefully, that doesn't look too far off the mark?)</p>
+        <p>Some other basic characters include mouth (口), one (一), two (二), three (三), sun (日), moon (月), above (上), below (下), middle (中), etc.</p>
+        <h4>Logical compounds</h4>
+        <p>There are only so many words that we can use basic characters to express. Other words can be expressed as a compound of two ideas. Let's suppose that we wanted to express the idea of resting. There are many places to rest, like a chair, a bed, under a tree, etc. The tree is quite versatile because you can relax momentarily like you can in a chair, and you can actually sleep like in a bed. So let's put a person (who needs to rest) together with a tree (a place to rest); then, we get the character 休 which means "rest."</p>
+        <p>Now consider the word "bright": historically, the most prominent bright things to think about would be the Sun and the Moon. So the character for bright, 明, compounds "sun" and "moon" into one character.</p>
+        <h4>Borrowed readings</h4>
+        <p>The vast majority of characters consist of two (maybe more) components where some of the components provides meaning, and the other provides a rough pronunciation. (This mainly applies to Chinese.) An example would be the character for time, 時, composed of the meaning (sun, 日) and a pronunciation (寺). As for how to read these, that's another can of worms I will open up momentarily.</p>
+    </body>
+</html>
