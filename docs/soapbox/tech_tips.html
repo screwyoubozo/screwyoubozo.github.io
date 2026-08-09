@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Soapbox: Vigilance on the web</title>
+		<link rel="stylesheet" href="../styles/styles.css">
+	</head>
+    <body>
+        <div id="topnav-placeholder"><p>Did you remember to run <code>python -m http.server 9000</code>?</p></div>
+		<script>
+			fetch('/lib/topnav.inc')
+			.then(res => res.text())
+			.then(html => {
+				document.getElementById('topnav-placeholder').innerHTML = html;
+			});
+		</script>
+        <h1>Vigilance on the web</h1>
+        <p>The title is a bit misleading because this doesn't exactly tell you how to be vigilant. I'm just telling you what to do.</p>
+        <p>Nothing that you do on the web is private. Corporations and black-hat hackers are thirsty for your browsing history and your preferences. I don't know the lengths that these demographics of "people" will go for your personal information; laws can't stop them because they don't know how to read. (That's what lawyers are for.)</p>
+        <p>Also. Generative AI is being deployed to every fucking part of your daily life. It can make mistakes, and it really makes me afraid of how credulous people are with whatever information it spits out. I've had a family member (a few months older than I am) talk about how they saw on the web that there were 82 hurricanes in Florida in a year (and fucking believed it). The ultimate garbage-in, garbage-out machine, lemme tell ya.</p>
+        <p>A colleague of mine, when forming their presentation, used an LLM to make parts of a presentation. It was very boring to hear, and veteran colleagues of the subject matter CAN tell that the content was just fluff.</p>
+        <p>No animosity to those people, given that generative AI is able to synthesise information so that you don't have to dig into that many websites for code syntax, trivial information lookup, etc. (Unfortunately, this group of use cases has very limited applicability for me.)</p>
+        <h2>Things you should do</h2>
+        <ol>
+            <li>Change your default search engine to DuckDuckGo: <a href="https://duckduckgo.com">https://duckduckgo.com</a>. It doesn't track you. (If you are vehemently opposed to generative AI in your search engine, use <a href="https://noai.duckduckgo.com">https://noai.duckduckgo.com</a> instead. If you despise all forms of AI, just remember that "artificial intelligence" is nothing more than a buzzword. Ever played Mario Kart single-player on Grand Prix mode?)</li>
+            <li>Get an adblocker such as uBlock Origin (<a href="https://ublockorigin.com">https://ublockorigin.com</a>) - for iPhone and iPad users, it's a Safari extension.</li>
+
+        </ol>
+    </body>
+</html>
