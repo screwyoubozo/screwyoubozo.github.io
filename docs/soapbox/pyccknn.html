@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Soapbox: Cyrillic</title>
+		<link rel="stylesheet" href="../styles/styles.css">
+        <link rel="icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+	</head>
+    <body>
+        <div id="topnav-placeholder"><p>Did you remember to run <code>python -m http.server 9000</code>?</p></div>
+		<script>
+			fetch('/lib/topnav.inc')
+			.then(res => res.text())
+			.then(html => {
+				document.getElementById('topnav-placeholder').innerHTML = html;
+			});
+		</script>
+        <h1>The Cyrillic script is quite interesting</h1>
+        <p>This title is a bit misleading because it doesn't really talk about the Cyrillic script as a whole, and it doesn't represent all languages that use the script. I don't know how handwriting really works in Kazakh or Kyrgyz, for example. Full disclaimer, I don't speak any language that uses the script. I focus more on the East Slavic languages.</p>
+        <h2>A small reading exercise</h2>
+        <p>Consider the following: <i><span lang="bg">да нет</span></i></p>
+    </body>
+</html>
